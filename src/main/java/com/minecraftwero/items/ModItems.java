@@ -28,6 +28,7 @@ public class ModItems {
 	public static ModFood eggFried = new ModFood("eggfried", 3, 1.2F, false);
 	public static ModFood baconSandwich = new ModFood("baconsandwich",7, 1.7F, false);
 	public static ModFood baconEC = new ModFood("baconec", 9, 2.0F, true);
+	public static ModFood cheeseSlice = new ModFood("cheese", 2, 0.40F, false);
 
 	//Launcher
 	public static BaconLauncher baconLauncher = new BaconLauncher("baconlauncher");
@@ -48,7 +49,7 @@ public class ModItems {
 	
 	public static void register(IForgeRegistry<Item> registry) {
 		registry.registerAll(rawBacon, cookedBacon, gayBacon, beefSoup, rawBeef, 
-							roastBeef, eggFried, baconSandwich, baconEC,baconLauncher, baconSword, baconPick, baconSpade,
+							roastBeef, eggFried, baconSandwich, baconEC, cheeseSlice, baconLauncher, baconSword, baconPick, baconSpade,
 							baconHoe, baconAxe, baconHelmet, baconChest, baconLegs, baconBoots);
 	}
 
@@ -62,6 +63,7 @@ public class ModItems {
 		eggFried.registerItemModel();
 		baconSandwich.registerItemModel();
 		baconEC.registerItemModel();
+		cheeseSlice.registerItemModel();
 		baconLauncher.registerItemModel();
 		baconSword.registerItemModel();
 		baconPick.registerItemModel();

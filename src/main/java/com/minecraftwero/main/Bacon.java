@@ -58,9 +58,10 @@ public class Bacon {
 		//Events
 		BaconEvents.registerEvents();
 		
-		//Rendering Bullet
-		ResourceLocation baconbullet = new ResourceLocation(Bacon.MODID, "baconbullet");
-		EntityHandler.registerModEntity(baconbullet, EntityBacon.class, "baconbullet", Bacon.instance, 16, 20, true);
+		//Rendering
+		ResourceLocation renderBacon = new ResourceLocation(Bacon.MODID);
+		EntityHandler.registerModEntity(renderBacon, EntityBacon.class, "renderbacon", Bacon.instance, 16, 20, true);
+
 	}
 
 	@Mod.EventHandler
