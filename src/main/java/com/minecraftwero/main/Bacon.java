@@ -7,7 +7,7 @@ import com.minecraftwero.entities.EntityHandler;
 import com.minecraftwero.events.BaconEvents;
 import com.minecraftwero.items.ModItems;
 import com.minecraftwero.proxies.CommonProxy;
-import com.minecraftwero.recipes.ModRecipes;
+import com.minecraftwero.recipes.ModSmeltingRecipes;
 
 import net.minecraft.block.Block;
 import net.minecraft.init.SoundEvents;
@@ -51,8 +51,9 @@ public class Bacon {
 
 	@Mod.EventHandler
 	public void init(FMLInitializationEvent event) {
+
 		//Recipes
-		ModRecipes.init();
+		ModSmeltingRecipes.init();
 		
 		//Events
 		BaconEvents.registerEvents();
