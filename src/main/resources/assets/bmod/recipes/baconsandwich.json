@@ -1,0 +1,20 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    "B",
+    "C",
+    "B"
+  ],
+  "key": {
+    "B": {
+      "item": "minecraft:bread"
+    },
+    "C": {
+      "item": "bmod:cookedbacon"
+    }
+  },
+  "result": {
+    "item": "bmod:baconsandwich",
+    "count": 1
+  }
+}
