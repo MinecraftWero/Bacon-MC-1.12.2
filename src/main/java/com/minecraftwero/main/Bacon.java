@@ -4,6 +4,7 @@ import com.minecraftwero.blocks.ModBlocks;
 import com.minecraftwero.creativetab.BaconTab;
 import com.minecraftwero.entities.EntityBacon;
 import com.minecraftwero.entities.EntityHandler;
+import com.minecraftwero.entities.TestEntity;
 import com.minecraftwero.events.BaconEvents;
 import com.minecraftwero.items.ModItems;
 import com.minecraftwero.proxies.CommonProxy;
@@ -60,7 +61,9 @@ public class Bacon {
 		
 		//Rendering
 		ResourceLocation renderBacon = new ResourceLocation(Bacon.MODID);
+		ResourceLocation renderTest = new ResourceLocation(Bacon.MODID);
 		EntityHandler.registerModEntity(renderBacon, EntityBacon.class, "renderbacon", Bacon.instance, 16, 20, true);
+		EntityHandler.registerModEntity(renderTest, TestEntity.class, "rendertest", Bacon.instance, 16, 20, true);
 
 	}
 

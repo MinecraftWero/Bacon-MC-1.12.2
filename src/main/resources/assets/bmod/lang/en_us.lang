@@ -18,6 +18,7 @@ item.bacongun.name=Bacon Gun
 item.beefsoup.name=Roast Beef Soup
 item.baconec.name=Bacon Egg Sandwich
 item.baconsandwich.name=Bacon Sandwich
+item.cheese.name=Cheese Slice
 tile.blockraw.name=Raw Bacon Block
 tile.blockcooked.name=Cooked Bacon Block
 

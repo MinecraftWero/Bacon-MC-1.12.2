@@ -30,9 +30,10 @@ public class ModItems {
 	public static ModFood baconEC = new ModFood("baconec", 9, 2.0F, true);
 	public static ModFood cheeseSlice = new ModFood("cheese", 2, 0.40F, false);
 
-	//Launcher
+	//Items
 	public static BaconLauncher baconLauncher = new BaconLauncher("baconlauncher");
-	
+	public static TestItem testItem = new TestItem("testitem");
+
 	//Tools
 	public static BaconSword baconSword = new BaconSword(Bacon.baconToolMaterial, "baconsword");
 	public static BaconPickaxe baconPick = new BaconPickaxe(Bacon.baconToolMaterial, "baconpick");
@@ -49,11 +50,13 @@ public class ModItems {
 	
 	public static void register(IForgeRegistry<Item> registry) {
 		registry.registerAll(rawBacon, cookedBacon, gayBacon, beefSoup, rawBeef, 
-							roastBeef, eggFried, baconSandwich, baconEC, cheeseSlice, baconLauncher, baconSword, baconPick, baconSpade,
-							baconHoe, baconAxe, baconHelmet, baconChest, baconLegs, baconBoots);
+							roastBeef, eggFried, baconSandwich, baconEC, cheeseSlice,
+							baconLauncher, baconSword, baconPick, baconSpade, baconHoe,
+							baconAxe, baconHelmet, baconChest, baconLegs, baconBoots, testItem);
 	}
 
 	public static void registerModels() {
+		//Food
 		rawBacon.registerItemModel();
 		cookedBacon.registerItemModel();
 		gayBacon.registerItemModel();
@@ -64,6 +67,8 @@ public class ModItems {
 		baconSandwich.registerItemModel();
 		baconEC.registerItemModel();
 		cheeseSlice.registerItemModel();
+
+		//Items
 		baconLauncher.registerItemModel();
 		baconSword.registerItemModel();
 		baconPick.registerItemModel();
@@ -74,6 +79,7 @@ public class ModItems {
 		baconChest.registerItemModel();
 		baconLegs.registerItemModel();
 		baconBoots.registerItemModel();
+		testItem.registerItemModel();
 	}
 	
 }     
